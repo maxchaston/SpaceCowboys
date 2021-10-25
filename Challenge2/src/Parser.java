@@ -14,8 +14,8 @@ public class Parser {
         parsedCode.add(s.replaceAll("\r", "").replaceAll("\n", "").strip().split(" "));
       }
       return parsedCode;
-    } catch (IOException e) {
-      System.out.println(e);
+    } catch (IOException error) {
+      System.out.println(error);
     }
     return null;
   }
